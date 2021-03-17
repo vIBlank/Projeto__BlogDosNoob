@@ -1,59 +1,69 @@
-<!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>.: Sobre| Blog dos Noob</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style/estilo.css">   
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noob Kat</title>
+    <link rel="stylesheet" href="./assets/css/estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__navegacao">
+            <input class="cabecalho__home" type="checkbox" id="home">
+            <label for="home">
+                <div class="cabecalho__icon"></div>
+                <div class="cabecalho__icon"></div>
+                <div class="cabecalho__icon"></div>
+            </label>
+            <ul class="cabecalho__lista">
+                <li class="cabecalho__item"><a class="cabecalho__link" href="index.html">Home</a></li>
+                <li class="cabecalho__item"><a class="cabecalho__link" href="noticias.html">Notícias</a></li>
+                <li class="cabecalho__item"><a class="cabecalho__link" href="sobre.html">Sobre</a></li>
+            
+            </ul>
+            <img src="./assets/img/logo-blogDosNoob.svg" alt="" width="100px" height="78px" class="cabecalho__logo">
 
-    <body>
-        <header class="cabecalho">
-            <nav class="cabecalho__navegacao">
-                <img src="img/logo-blogDosNoob.svg" alt="Logo blog dos Noob" class="cabecalho__logo"> <a href="#"></a>
-                <ul class="cabecalho__lista">
-                    <li class="cabecalho__item">Home</li>
-                    <li class="cabecalho__item">Notícias</li>
-                    <li class="cabecalho__item">Sobre</li>
-                </ul>
-            </nav>
-        </header>
+            <div class="back"></div>
+        </nav>
+    </header>
+    <section class="sobre">
+        <h1 class="sobre__titulo titulo--principal">Sobre</h1>
 
-        <section class="conteiner sobre">
-            <h1 class="sobre__titulo">.: Sobre</h1>
-            <p class="sobre_texto--apresentacao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel veniam error reprehenderit maxime maiores odio porro neque quae aperiam! Est fugit distinctio nostrum cupiditate aperiam hic quam dolore sit tempora. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, saepe numquam fugit consequatur temporibus animi earum. Tenetur, repellendus, velit, delectus ea recusandae veniam dolorem mollitia nam illo doloribus soluta aut.</p>
-            <article class="pessoa">
-                <div class="pessoa__conteudo">
-                    <h2 class="pessoa__titulo">Vitor Bianchini deQuadros(Blank)<br>-- desenvolvedor front-end</h2>
-                    <p class="pessoa__texto"></p>
-                </div>
-                
-                <img src="" alt="" class="" class="pessoa__img">
-            </article>
-            <article class="pessoa">
-                <div class="pessoa__conteudo">    
-                    <h2 class="pessoa__titulo">Pedro Bianchini de Quadros  (ペドロ_System)<br>-- desenvolvedor back-end</h2>
-                    <p class="pessoa__texto"></p>
-                </div>
+        <article class="sobre__conteudo">
+            <h2 class="sobre__titulo sobre__nome">Nome Nome Nome</h2>
+            <p class="sobre__discrição">Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição</p>
+            <img class="sobre__img" src="./assets/img/kat.svg" alt="">
+            <div class="sobre__botoes">
+                <button class="sobre__botao"><a class="sobre__link" href="#">Linkedin</a></button>
+                <button class="sobre__botao"><a class="sobre__link" href="#">Facebook</a></button>
+                <button class="sobre__botao"><a class="sobre__link" href="#">GitHub</a></button>
+            
+        </article>
 
-                <img src="" alt="" class="" class="pessoa__img">
-            </article>
-            <article class="pessoa">
-                <div class="pessoa__conteudo">    
-                    <h2 class="pessoa__titulo">Pedro Oliveira<br>-- <h2>
-                    <p class="pessoa__texto"></p>
-                </div>
+        <article class="sobre__conteudo">
+            <h2 class="sobre__titulo sobre__nome">Nome Nome Nome</h2>
+            <p class="sobre__discrição">Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição</p>
+            <img class="sobre__img" src="./assets/img/kat.svg" alt="">
+            <div class="sobre__botoes">
+                <button class="sobre__botao"><a class="sobre__link" href="#">Linkedin</a></button>
+                <button class="sobre__botao"><a class="sobre__link" href="#">Facebook</a></button>
+                <button class="sobre__botao"><a class="sobre__link" href="#">GitHub</a></button>
+            
+        </article>
 
-                <img src="" alt="" class="" class="pessoa__img">
+        <article class="sobre__conteudo">
+            <h2 class="sobre__titulo sobre__nome Vitor" id="vitor">Nome Nome Nome</h2>
+            <p class="sobre__discrição">Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição</p>
+            <img class="sobre__img" src="./assets/img/kat.svg" alt="">
+            <div class="sobre__botoes">
+                <button class="sobre__botao"><a class="sobre__link" href="#">Linkedin</a></button>
+                <button class="sobre__botao"><a class="sobre__link" href="#">Facebook</a></button>
+                <button class="sobre__botao"><a class="sobre__link" href="#">GitHub</a></button>
+            
+        </article>
+    </section>
 
-            </article>
-        </section>
-    </body>
-    <footer>
-
-    </footer>
+</body>
 </html>
