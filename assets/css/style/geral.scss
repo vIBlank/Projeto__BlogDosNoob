@@ -1,0 +1,43 @@
+h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-da-letra);
+}
+
+body {
+    background: var(--cor-do-fundo);
+}
+
+.link {
+    color: var(--cor-da-letra);
+    text-decoration: none;
+}
+
+.titulo--master {
+    text-transform: uppercase;
+    margin: 28px 0;
+}
+
+.noticias, .sobre, .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.noticia__titulo, .sobre__titulo, .home__titulo {
+    padding: 22px 21px 22px 22px;
+}

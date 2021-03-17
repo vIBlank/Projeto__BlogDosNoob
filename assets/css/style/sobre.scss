@@ -1,0 +1,47 @@
+.sobre__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--cor-do-card);
+    border-radius: 5px;
+    width: 80.12%;
+    margin-bottom: 8.33vw;
+}
+
+.sobre__nome, .sobre__discrição, .sobre__img, .sobre__botoes {
+    width: 86%;
+}
+
+.sobre__nome {
+    text-align: left ;
+}
+
+.sobre__img {
+    border-radius: 5px;
+
+}
+
+.sobre__botoes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 17px 0 9px 0;
+}
+
+.sobre__botao {
+    background: var(--cor-da-letra);
+    width: 47.6%;
+    height: 37px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.sobre__botao:nth-child(1) {
+    margin-right: 3.9%;
+}
+
+.sobre__link {
+    color: var(--cor-do-fundo);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
