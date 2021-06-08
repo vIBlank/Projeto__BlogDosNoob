@@ -1,6 +1,7 @@
 /* card de noticias */
 
-.noticia__card {
+
+.noticia__card, .home__card {
     display: grid;
     grid-template-areas: 
         'imagem'
@@ -8,10 +9,15 @@
         'botao';
     grid-template-columns: 300px;
     grid-template-rows: auto auto auto;
-    margin-bottom: 1.3rem;
+    margin: 0 auto 1.6rem 0;
+    
 }
 
-.noticia__img {
+.noticia__card:last-child {
+    margin-bottom: 75px;
+}
+
+.noticia__img, .home__img {
     grid-area: 'imagem' ;
     width: 100%;
     height: 100%;
@@ -20,14 +26,14 @@
     border-radius: 5px 5px 0 0;
 }
 
-.noticia__texto {
+.noticia__texto, .home__texto {
     grid-area: 'texto';
     grid-column: 1/2;
     grid-row: 2/3;
-    background: var(--cor-do-card);
+    background: var(--cor-do-fundo);
 }
 
-.noticia__subtitulo {
+.noticia__subtitulo, .home__subtitulo  {
     padding: 0px 21px 22px 22px;
     font-weight: normal;
 }
@@ -36,8 +42,12 @@
     grid-area: 'botao';
     grid-column: 1/2;
     grid-row: 4/5;
-    background: var(--cor-do-card);
+    background: var(--cor-do-fundo);
     padding: 0 21px 22px 22px;
+}
+
+.noticia__botoes--pc {
+    display: none;
 }
 
 .noticia__botao {
@@ -45,10 +55,86 @@
     height: 37px;
     border: none;
     font-weight: bold;
-    color: var(--cor-do-fundo);
+    color: var(--cor-do-card);
     border-radius: 5px;
     background: var(--cor-da-letra);
 }
 
+@media screen and (min-width: 768px) {
+
+    .noticias__todas{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 75vw;
+    }
+
+    .noticia__card{
+        margin-right: 0;
+        margin: 0 30px 1.6rem 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .noticias__todas {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .noticia__card {
+        display: flex;
+        align-items: center;
+        margin: 0 0.5rem 0.5rem 0;
+        
+    }
+
+    .noticia__card:last-child {
+        margin-bottom: 75px;
+    }
+    
+    .noticia__img {
+        object-fit: cover;
+        width: 20%;
+        height: 150px;
+        border-radius: 5px 0px 0px 5px;
+    }
+    
+    .noticia__texto {
+        background: var(--cor-do-fundo);
+        width: 50%;
+        height: 150px;
+        border-radius: 0px 5px 5px 0px;
+    }
+    
+    .noticia__subtitulo {
+        padding: 0px 21px 22px 22px;
+        font-weight: normal;
+    }
+
+    .noticia__botoes{
+        display: none;
+    }
+    
+    .noticia__botoes--pc {
+        display: flex;
+        align-items: center;
+        background: none;
+        padding: 0 21px 22px 22px;
+    }
+    
+    /*teste*/
+
+    .anuncieAki{
+        background: gray;
+        position: absolute;
+        top: 130px;
+        right: 215px;
+        width: 115px;
+        height: 80vh;
+        z-index: -1;
+    }
+}
 
 

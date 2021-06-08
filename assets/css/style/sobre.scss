@@ -1,11 +1,26 @@
+.sobre__pessoas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
 .sobre__conteudo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--cor-do-card);
+    background: var(--cor-do-fundo);
     border-radius: 5px;
-    width: 80.12%;
+    width: 100%;
+    max-width: 360px;
     margin-bottom: 8.33vw;
+    
+}
+
+.sobre__conteudo:last-child {
+
+    margin-bottom: 80px;
+
 }
 
 .sobre__nome, .sobre__discrição, .sobre__img, .sobre__botoes {
@@ -32,6 +47,7 @@
     width: 47.6%;
     height: 37px;
     border: none;
+    border-radius: 5px;
     margin-bottom: 10px;
 }
 
@@ -40,8 +56,38 @@
 }
 
 .sobre__link {
-    color: var(--cor-do-fundo);
+    color: var(--cor-do-card);
     font-weight: bold;
     text-decoration: none;
     font-size: 16px;
+}
+
+@media screen and (min-width: 1024px){
+
+    .sobre__pessoas {
+        display: grid;
+        grid-template-columns: 360px 360px;
+        grid-template-rows: auto auto;
+        margin: 0 auto;
+        width: auto;
+    }
+
+    .sobre__conteudo{
+        margin: 0 auto 40px auto;
+        width: 300px;
+    }
+
+}
+
+@media screen and (min-width: 1275px){
+
+    .sobre__pessoas {
+        display: grid;
+        grid-template-columns: 360px 360px 360px;
+        grid-template-rows: auto auto auto;
+        margin: 0 auto;
+        width: auto;
+    }
+
+
 }

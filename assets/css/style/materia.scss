@@ -5,7 +5,8 @@
 }
 
 .materia__titulo {
-    margin: 28px 0 11.5px 0;
+    margin: 0 0 11.5px 0;
+    margin-top: calc(28px + 78px);
     font-size: 18px;
     width: 83.3%;
 }
@@ -43,10 +44,81 @@
 .materia__img {
     width: 83.3%;
     margin: 11.5px 0 11.5px 0;
-    border-radius: 5px
+    border-radius: 5px;
+    object-fit: cover;
 }
 
 .materia__texto {
     width: 83.3%;
     margin: 5px 0 5px 0;
+}
+.assunto {
+    margin-bottom: 95px;
+}
+
+.assunto {
+    display: flex;
+    margin-top: 20px;
+    width: min-content;
+}
+
+.noticia__botao--artigo {
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 768px){
+
+    .materia__img, .materia__texto, .materia__info, .materia__titulo{
+        max-width: 46.875%;
+    }
+
+    .materia__titulo{
+        font-size: 20px;
+    }
+
+    .materia__info {
+        justify-content: start;
+    }
+
+    .materia__data {
+        margin-left: 8px;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .assunto {
+        width: 47.3%
+    }
+
+    .materia__titulo{
+        margin-top: calc(28px + 58px);
+    }
+
+    .materia__img {
+        width: 400px;
+    }
+
+    .anuncieAki--materia{
+
+        background: gray;
+        position: absolute;
+        top: 130px;
+        right: 100px;
+        width: 115px;
+        height: 80vh;
+        z-index: -1;
+    
+    }
+    .anuncieAki--materia2{
+        background: gray;
+        position: absolute;
+        top: 130px;
+        left: 100px;
+        width: 115px;
+        height: 80vh;
+        z-index: -1;
+    }
+
 }
