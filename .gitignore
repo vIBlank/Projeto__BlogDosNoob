@@ -1,6 +1,5 @@
 ligueOSCSS.txt
 assets/css/style/estilo.css.map
-assets/css/style/estilo.css
 assets/css/style/normalize.scss
 *.scssc
 assets/img/logo-branco.svg
@@ -13,3 +12,11 @@ criadorDeMatéria.html
 assets/css/normalize.scss
 assets/css/estilo.css.map
 assets/css/estilo.css
+assets/js/testes.js
+assets/css/style/teste.css
+assets/img/logo-NK.svg
+assets/img/Wild-Rift-1.png
+blog/index1.html
+cores.txt
+estilo.css
+.gitignore
