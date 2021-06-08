@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    background: var(--cor-do-fundo);
+    background: #252a2c;
 }
 
 .link {
@@ -40,4 +40,31 @@ body {
 
 .noticia__titulo, .sobre__titulo, .home__titulo {
     padding: 22px 21px 22px 22px;
+}
+
+.titulo--principal {
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .titulo--principal{
+        margin-top: 58px;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 18px;
+    }
+    
+    h2 {
+        margin: 0;
+        font-size: 16px;
+    }
+    
+    h3 {
+        margin: 0;
+        font-size: 14px;
+    }
 }
