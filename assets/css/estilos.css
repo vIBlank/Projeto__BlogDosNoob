@@ -368,7 +368,8 @@ body {
   filter: drop-shadow(0px 0px 45px #000000);
   border-radius: 0px 0px 5px 5px;
   height: 78px;
-  width: 100vw; }
+  width: 100vw;
+  z-index: 1; }
 
 /* icone haburger */
 .cabecalho__icon:nth-child(1) {
@@ -667,7 +668,6 @@ body {
 .sobre__pessoas {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 80%; }
 
 .sobre__conteudo {
@@ -731,60 +731,13 @@ body {
     grid-template-columns: 360px 360px 360px;
     grid-template-rows: auto auto auto;
     margin: 0 auto;
-    width: auto; } }
+    width: auto; }
+
+  .sobre__conteudo {
+    margin-bottom: 80px; } }
 .carrosel {
-  z-index: -1;
+  z-index: 0;
   position: relative; }
-
-.seta__direita {
-  position: absolute;
-  left: 0;
-  top: 0; }
-  .seta__direita .seta__cima--direita {
-    position: absolute;
-    width: 29.32px;
-    height: 4px;
-    left: 0px;
-    top: 0px;
-    background: #C4C4C4;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 100px;
-    transform: rotate(30deg); }
-  .seta__direita .seta__baixo--direita {
-    position: absolute;
-    width: 29.32px;
-    height: 4px;
-    left: 0px;
-    top: 14.14px;
-    background: #C4C4C4;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 100px;
-    transform: rotate(-30deg); }
-
-.seta__esquerda {
-  position: absolute;
-  left: 0;
-  top: 0; }
-  .seta__esquerda .seta__cima--esquerda {
-    position: absolute;
-    width: 29.32px;
-    height: 4px;
-    left: 0px;
-    top: 0;
-    background: #C4C4C4;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 100px;
-    transform: rotate(-30deg); }
-  .seta__esquerda .seta__baixo--esquerda {
-    position: absolute;
-    width: 29.32px;
-    height: 4px;
-    left: 0px;
-    top: 14.14px;
-    background: #C4C4C4;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 100px;
-    transform: rotate(30deg); }
 
 .home__card--padrao {
   display: none;
@@ -843,46 +796,20 @@ body {
   color: var(--cor-do-card); }
 
 @media screen and (min-width: 1024px) {
-  #carrosel {
-    left: -80;
+  .carrosel {
+    z-index: 0;
     width: 70vw;
-    margin-bottom: 60px; }
+    display: flex;
+    justify-content: space-around; }
 
   #conjunto__circulos {
     display: none; }
 
-  .home__card {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5rem; }
-
-  .home__img {
-    object-fit: cover;
-    width: 20%;
-    height: 150px;
-    border-radius: 5px 0px 0px 5px; }
+  .home__card--padrao {
+    display: grid; }
 
   .home__texto {
-    background: var(--cor-do-fundo);
-    width: 50%;
-    height: 150px;
-    border-radius: 0px 5px 5px 0px; }
-
-  .home__subtitulo {
-    padding: 0px 21px 22px 22px;
-    font-weight: normal; }
-
-  .discord {
-    position: absolute;
-    top: 90px;
-    right: calc(5vw);
-    flex-direction: column;
-    align-items: center;
-    z-index: -1; }
-
-  .discord__iframe {
-    height: 300px;
-    width: 300px; } }
+    height: 150px; } }
 body {
   position: relative; }
 

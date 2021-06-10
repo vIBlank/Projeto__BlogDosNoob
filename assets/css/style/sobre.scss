@@ -1,7 +1,6 @@
 .sobre__pessoas {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 80%;
 }
 
@@ -18,7 +17,7 @@
 }
 
 .sobre__conteudo:last-child {
-
+    
     margin-bottom: 80px;
 
 }
@@ -89,5 +88,8 @@
         width: auto;
     }
 
+    .sobre__conteudo{
+        margin-bottom: 80px;
+    }
 
 }
